@@ -13,5 +13,5 @@ if sobrenome:
 
 if st.button("Mostrar nome completo"):
     nome_completo = f"{nome} {sobrenome}".upper()
-    st.success(f"O seu nome completo é {nome} {sobrenome}")
+    st.success(f"O seu nome completo é {nome_completo}")
 

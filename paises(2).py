@@ -8,7 +8,8 @@ fig = px.choropleth(dataset,
                      locations=dataset['iso3'],
                      color=dataset['longitude'],
                      hover_name=dataset['nome'])
-fig.update_layout(title='Mapa Coroplético dos Países',
-                  geo_scope='world')
-fig.show()
+
+fig.update_layout(title='Mapa Coroplético dos Países', geo_scope='world')
+
+fig.plotly_charts(fig, use_container_widt=True, theme="streamlit")
 
